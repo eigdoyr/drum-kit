@@ -1,0 +1,78 @@
+html {
+  font-size: 10px;
+  background-color: black;
+  background-image: url(https://img.freepik.com/premium-photo/product-disply-stand-with-black-background-3d-rendedecorate-with-blue-neon-light_487103-221.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 100% 100%;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.keys {
+  display: flex;
+  flex: 1;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  padding: 1rem;
+}
+
+.key {
+  border: 0.1rem solid hsl(246, 99%, 73%);
+  border-radius: 2rem;
+  font-size: 1rem;
+  padding: 1rem 0.5rem;
+  transition: all 0.09s ease;
+  width: 15rem;
+  text-align: center;
+  color: hsl(246, 99%, 73%);
+  background: rgba(16, 95, 148, 0.4);
+  text-shadow: 0 0 0.5rem rgb(33, 46, 45);
+  box-shadow: 2px 5px 20px hsl(246, 99%, 73%);
+  font-weight: bolder;
+}
+.playing {
+  transform: scale(1.2);
+  border-color: hsl(320, 100%, 50%);
+  box-shadow: 0 0 5rem hsl(325, 100%, 50%);
+}
+
+kbd {
+  display: block;
+  font-size: 6rem;
+}
+.sound {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  color: hsl(246, 88%, 84%);
+}
+
+@media (width >=800px) {
+  .keys {
+    display: flex;
+    flex: 1;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+  .key {
+    margin: 1rem;
+    font-size: 1.5rem;
+    padding: 1rem 0.5rem;
+    width: 10rem;
+  }
+  .sound {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+  }
+}
